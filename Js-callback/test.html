@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test</title>
+  <script type="text/javascript">
+
+    const fruits = ["apple", "orange", "cherry"];
+
+    Array.prototype.myForEach = function (callback) {
+      let k = 0;
+      while (k < this.length) {
+        callback(this[k], k, this);
+        k++;
+      }
+    }
+
+    fruits.myForEach(function (element, index, array) {
+      console.log(element, index, array);
+    });
+  </script>
+</head>
+
+<body>
+  <h3>Task 01:</h3>
+  <p>
+  <ul>
+    <li>Date</li>
+    <li>String</li>
+    <li>Array</li>
+    <li>Map</li>
+    <li>JSON</li>
+    <li>Promise</li>
+    <li>Math</li>
+
+  </ul>
+  </p>
+  <h3>Task 02:</h3>
+  <p>
+  <ul>
+    <li>Date – getDate, getHours,</li>
+    <li>String - toUpperCase</li>
+    <li>Array - forEach, map, put, slice, sort</li>
+    <li>Map – forEach,</li>
+    <li>JSON - stringify</li>
+    <li>Promise – resolve, reject</li>
+    <li>Math - random</li>
+  </ul>
+  </p>
+</body>
+
+</html>
